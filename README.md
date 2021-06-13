@@ -1,2 +1,3 @@
 # Cinema-Reservation-Desktop-Application-System
-This system is written in C# Programming Language with GUI interface and File System to store the data
+Using the ADO.NET Technology
+This system is written in C# Programming Language with GUI interface and Oracle Database to store the data, Handle all the reservation of the cinema with customers online
