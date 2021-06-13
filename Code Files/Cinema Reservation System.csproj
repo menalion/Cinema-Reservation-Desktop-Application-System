@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B131504-413B-4737-ADFB-4ABFC1742618}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cinema_Reservation_System</RootNamespace>
+    <AssemblyName>Cinema Reservation System</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\app\PrinceOfPersia\product\11.2.0\dbhome_1\ODP.NET\bin\2.x\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ALter_Screens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ALter_Screens.Designer.cs">
+      <DependentUpon>ALter_Screens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Builder_Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Builder_Screen.Designer.cs">
+      <DependentUpon>Builder_Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cancle_reservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cancle_reservation.Designer.cs">
+      <DependentUpon>Cancle_reservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>category.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cinema_Screen_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cinema_Screen_details.Designer.cs">
+      <DependentUpon>Cinema_Screen_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer Form.Designer.cs">
+      <DependentUpon>Customer Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer Functions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer Functions.Designer.cs">
+      <DependentUpon>Customer Functions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer Registre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer Registre.Designer.cs">
+      <DependentUpon>Customer Registre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Book_Tickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Book_Tickets.Designer.cs">
+      <DependentUpon>Customer_Book_Tickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="icome_per_day.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>icome_per_day.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Income_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Income_Report.Designer.cs">
+      <DependentUpon>Income_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insert_Into_Screens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insert_Into_Screens.Designer.cs">
+      <DependentUpon>Insert_Into_Screens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager Form.Designer.cs">
+      <DependentUpon>Manager Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager Functions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager Functions.Designer.cs">
+      <DependentUpon>Manager Functions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager_Films.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_Films.Designer.cs">
+      <DependentUpon>Manager_Films.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Remove_Movies_Screens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remove_Movies_Screens.Designer.cs">
+      <DependentUpon>Remove_Movies_Screens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="total_cost.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>total_cost.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="view_history.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_history.Designer.cs">
+      <DependentUpon>view_history.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_report.Designer.cs">
+      <DependentUpon>View_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="screen_Report1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>screen_Report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Search_Cinemas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_Cinemas.Designer.cs">
+      <DependentUpon>Search_Cinemas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search_Date.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_Date.Designer.cs">
+      <DependentUpon>Search_Date.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search_Movies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_Movies.Designer.cs">
+      <DependentUpon>Search_Movies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search_Time.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_Time.Designer.cs">
+      <DependentUpon>Search_Time.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search_venu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_venu.Designer.cs">
+      <DependentUpon>Search_venu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Select_Seats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select_Seats.Designer.cs">
+      <DependentUpon>Select_Seats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Serach_categories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Serach_categories.Designer.cs">
+      <DependentUpon>Serach_categories.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ALter_Screens.resx">
+      <DependentUpon>ALter_Screens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Builder_Screen.resx">
+      <DependentUpon>Builder_Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cancle_reservation.resx">
+      <DependentUpon>Cancle_reservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>category.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cinema_Screen_details.resx">
+      <DependentUpon>Cinema_Screen_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer Form.resx">
+      <DependentUpon>Customer Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer Functions.aa-DJ.resx">
+      <DependentUpon>Customer Functions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer Functions.resx">
+      <DependentUpon>Customer Functions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer Registre.resx">
+      <DependentUpon>Customer Registre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Book_Tickets.resx">
+      <DependentUpon>Customer_Book_Tickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="icome_per_day.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>icome_per_day.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Income_Report.resx">
+      <DependentUpon>Income_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insert_Into_Screens.resx">
+      <DependentUpon>Insert_Into_Screens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager Form.resx">
+      <DependentUpon>Manager Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager Functions.resx">
+      <DependentUpon>Manager Functions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_Films.resx">
+      <DependentUpon>Manager_Films.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Remove_Movies_Screens.resx">
+      <DependentUpon>Remove_Movies_Screens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="total_cost.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>total_cost.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_history.resx">
+      <DependentUpon>view_history.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_report.resx">
+      <DependentUpon>View_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screen_Report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>screen_Report1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_Cinemas.resx">
+      <DependentUpon>Search_Cinemas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_Date.resx">
+      <DependentUpon>Search_Date.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_Movies.resx">
+      <DependentUpon>Search_Movies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_Time.resx">
+      <DependentUpon>Search_Time.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_venu.resx">
+      <DependentUpon>Search_venu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Select_Seats.resx">
+      <DependentUpon>Select_Seats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Serach_categories.resx">
+      <DependentUpon>Serach_categories.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
